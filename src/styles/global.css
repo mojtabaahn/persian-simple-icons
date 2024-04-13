@@ -1,0 +1,18 @@
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "~prismjs/themes/prism-tomorrow.min.css";
+@import "~boxicons/css/boxicons.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.fa{
+  font-family: "Vazirmatn", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
