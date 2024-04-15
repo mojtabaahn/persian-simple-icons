@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import favicon from "../images/favicon.png"
+import favicon from "../assets/favicon.png"
 
 export const Seo = ({ description, lang, meta, title }) => {
     const { site } = useStaticQuery(

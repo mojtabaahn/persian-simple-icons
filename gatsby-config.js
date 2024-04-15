@@ -1,13 +1,14 @@
 module.exports = {
     siteMetadata: {
-        title: `Persian Simple Icons`,
+        title: 'Persian Simple Icons',
+        description: '20+ free SVG icons for persian popular brands',
         siteUrl: `http://localhost:8000`
     },
     plugins: [
         'gatsby-plugin-postcss',
-        "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
+        "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         'gatsby-plugin-mdx-frontmatter',
@@ -28,18 +29,10 @@ module.exports = {
             resolve: "gatsby-plugin-react-svg",
             options: {
               rule: {
-                include: /icons/
+                include: /.*\.svg$/
               }
             }
           },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                "name": "images",
-                "path": "./src/images/"
-            },
-            __key: "images"
-        },
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -47,6 +40,14 @@ module.exports = {
                 "path": "./entries/"
             },
             __key: "entries"
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                "name": "icons",
+                "path": "./icons/"
+            },
+            __key: "icons"
         },
         {
             resolve: "gatsby-transformer-remark",
