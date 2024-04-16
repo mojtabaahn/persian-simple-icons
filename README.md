@@ -1,54 +1,25 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Free SVG Icons For Persian Popular Brands
 
-## 🚀 Quick start
+Welcome! This project aims to provide a collection of SVG icons representing popular brands in Iran. The icons are freely available for download or copying directly from the website.
 
-1.  **Create a Gatsby site.**
+## Getting Started
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+To get started, simply visit the [website](https://mojtabaahn.github.io/persian-simple-icons/) where you can browse through the collection of SVG icons. You can search for specific brands or explore the entire collection. Once you find the icon you need, you can download it or copy the SVG code directly.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## How to Contribute
 
-2.  **Start developing.**
+We welcome contributions to expand and improve the collection of SVG icons. If you have SVG icons for additional brands or if you notice any errors or outdated icons, please feel free to contribute!
 
-    Navigate into your new site’s directory and start it up.
+To contribute, follow these steps:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+1. Fork the repository.
+2. Add your SVG icons and corresponding manifest.
+3. Submit a pull request detailing your changes.
 
-3.  **Open the code and start customizing!**
+## License
 
-    Your site is now running at http://localhost:8000!
+This project is licensed under the [MIT License](LICENSE), which means you are free to use, modify, and distribute the icons for both personal and commercial purposes. However, attribution is appreciated.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Disclaimer
 
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+This project is not affiliated with or endorsed by any of the brands represented by the icons. The icons are provided for informational and educational purposes only.
