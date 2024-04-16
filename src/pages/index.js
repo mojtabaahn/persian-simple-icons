@@ -73,7 +73,7 @@ const Icons = ({icons}) => {
 
     const [searchFilter] = useAtom(searchFilterAtom)
 
-    icons.filter(icon => icon.title_en.toLowerCase().includes(searchFilter.toLowerCase()) || icon.title_fa.toLowerCase().includes(searchFilter.toLowerCase()))
+    icons = icons.filter(icon => icon.title_en.toLowerCase().includes(searchFilter.toLowerCase()) || icon.title_fa.toLowerCase().includes(searchFilter.toLowerCase()))
 
     return <div className='grid md:grid-cols-3 lg:grid-cols-5 gap-4'>
         {icons.map((icon, index) => <Icon icon={icon} key={index} />)}
