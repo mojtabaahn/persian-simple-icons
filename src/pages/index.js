@@ -52,7 +52,7 @@ const Navigation = ({title, description}) => {
     const [searchFilter, setSearchFilter] = useAtom(searchFilterAtom)
 
     return <div className='flex flex-col gap-2 md:flex-row items-center py-4 mb-6'>
-        <Logo className='h-12' />
+        <Logo className='h-12 fill-gradient-to-r from-blue-500' />
         <div className='text-center md:text-left'>
             <div className='text-2xl'>{title}</div>
             <div className='text-xs text-gray-500 capitalize font-semibold'>{description}</div>
