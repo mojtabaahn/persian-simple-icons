@@ -1,4 +1,4 @@
-<a href='https://mojtabaahn.github.io/persian-simple-icons/'>![banner](https://github.com/mojtabaahn/persian-simple-icons/assets/9845317/ac54b359-a840-4480-baf7-97b32a180b77)</a>
+<a href='https://mojtabaahn.github.io/persian-simple-icons/'>![banner](https://github.com/mojtabaahn/persian-simple-icons/assets/9845317/74ba2e55-1ac7-490a-941b-b08dbc3b9dce)</a>
 
 # Free SVG Icons For Persian Popular Brands
 
