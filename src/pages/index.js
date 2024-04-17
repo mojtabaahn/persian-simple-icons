@@ -52,14 +52,14 @@ const Navigation = ({title, description}) => {
     const [searchFilter, setSearchFilter] = useAtom(searchFilterAtom)
 
     return <div className='flex flex-col gap-2 md:flex-row items-center py-4 mb-6'>
-        <Logo className='h-12 fill-gradient-to-r from-blue-500' />
+        <Logo className='h-12' />
         <div className='text-center md:text-left'>
             <div className='text-2xl'>{title}</div>
             <div className='text-xs text-gray-500 capitalize font-semibold'>{description}</div>
         </div>
         <div className='flex-grow' />
-        <div className='rounded-xl bg-white py-2 px-4 flex items-center max-w-[100%] w-[250px]'>
-            <input type="text" className='outline-none flex-grow min-w-[0]' placeholder='Filter Icons..' value={searchFilter} onChange={e => setSearchFilter(e.target.value)} />
+        <div className='rounded-xl bg-white dark:bg-gray-900 py-2 px-4 flex items-center max-w-[100%] w-[250px]'>
+            <input type="text" className='bg-transparent outline-none flex-grow min-w-[0]' placeholder='Filter Icons..' value={searchFilter} onChange={e => setSearchFilter(e.target.value)} />
             <i className='bx bx-search text-xl'></i>
         </div>
         <a className='ml-2' href='https://github.com/mojtabaahn/persian-simple-icons'>
@@ -86,7 +86,7 @@ const Icon = ({icon}) => {
     const copyCallback = () => {navigator.clipboard.writeText(getSVG())}
 
 
-    return <div className='bg-white rounded-lg flex flex-col items-center space-y-2 py-4 shadow-lg'>
+    return <div className='bg-white dark:bg-gray-900 rounded-lg flex flex-col items-center space-y-2 py-4 shadow-lg dark:shadow-none'>
         <div className='h-[100px] w-full flex flex-col justify-center items-center'>
             <IconSVG icon={icon.icon} className='max-h-[100px] max-w-[100px]' id={`icon-${icon.icon}`} />
         </div>
@@ -111,7 +111,7 @@ const IconAction = ({onClick, label, clickedLabel}) => {
     }, [clicked]);
     return <button
         onClick={callback}
-        className='bg-black text-white text-center uppercase rounded-md py-2'>
+        className='bg-black dark:bg-gray-800 text-white text-center uppercase rounded-md py-2'>
         {clicked ? clickedLabel : label}
     </button>
 }

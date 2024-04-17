@@ -25,7 +25,7 @@ export const Seo = ({ description, lang, meta, title }) => {
             htmlAttributes={{
                 lang,
             }}
-            bodyAttributes={{class: 'bg-slate-100'}}
+            bodyAttributes={{class: 'bg-slate-100 dark:bg-gray-800 text-black dark:text-gray-200 fill-black dark:fill-gray-200'}}
             title={title ? `${title} — ${defaultTitle}` : defaultTitle}
             meta={[
                 {
