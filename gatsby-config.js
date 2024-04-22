@@ -5,6 +5,14 @@ module.exports = {
         siteUrl: `http://localhost:8000`
     },
     plugins: [
+        {
+          resolve: `gatsby-plugin-google-analytics`,
+          options: {
+            trackingId: "G-BTDS6S0YG7",
+            head: true,
+            anonymize: true,
+          },
+        },
         'gatsby-plugin-postcss',
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
@@ -52,25 +60,6 @@ module.exports = {
         {
             resolve: "gatsby-transformer-remark",
             options: {}
-        },
-        {
-          resolve: `gatsby-plugin-google-analytics`,
-          options: {
-            trackingId: "G-BTDS6S0YG7",
-            head: false,
-            anonymize: false,
-            respectDNT: false,
-            exclude: [],
-            pageTransitionDelay: 0,
-//            optimizeId: "",
-//            experimentId: "",
-//            variationId: "",
-//            defer: false,
-//            sampleRate: 5,
-//            siteSpeedSampleRate: 10,
-//            cookieDomain: "mojtabaahn.github.io",
-//            enableWebVitalsTracking: true,
-          },
         },
     ]
 };
