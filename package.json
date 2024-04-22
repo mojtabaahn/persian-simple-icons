@@ -1,5 +1,5 @@
 {
-  "name": "mojtabaahn.ir",
+  "name": "persian-simple-icons",
   "version": "1.0.0",
   "private": true,
   "description": "persian simple icons",
@@ -22,7 +22,7 @@
     "boxicons": "^2.1.2",
     "gatsby": "^4.8.2",
     "gatsby-omni-font-loader": "^2.0.2",
-    "gatsby-plugin-google-analytics": "^4.9.0",
+    "gatsby-plugin-google-analytics": "^4.25.0",
     "gatsby-plugin-image": "^2.25.0",
     "gatsby-plugin-mdx": "^3.15.0",
     "gatsby-plugin-mdx-frontmatter": "^0.0.4",

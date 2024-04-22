@@ -53,5 +53,24 @@ module.exports = {
             resolve: "gatsby-transformer-remark",
             options: {}
         },
+        {
+          resolve: `gatsby-plugin-google-analytics`,
+          options: {
+            trackingId: "G-BTDS6S0YG7",
+            head: false,
+            anonymize: true,
+            respectDNT: true,
+            exclude: [],
+            pageTransitionDelay: 0,
+//            optimizeId: "",
+//            experimentId: "",
+//            variationId: "",
+            defer: false,
+            sampleRate: 5,
+            siteSpeedSampleRate: 10,
+            cookieDomain: "mojtabaahn.github.io",
+            enableWebVitalsTracking: true,
+          },
+        },
     ]
 };
