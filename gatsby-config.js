@@ -5,14 +5,6 @@ module.exports = {
         siteUrl: `http://localhost:8000`
     },
     plugins: [
-        {
-          resolve: `gatsby-plugin-google-analytics`,
-          options: {
-            trackingId: "G-BTDS6S0YG7",
-            head: true,
-            anonymize: true,
-          },
-        },
         'gatsby-plugin-postcss',
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
@@ -60,6 +52,19 @@ module.exports = {
         {
             resolve: "gatsby-transformer-remark",
             options: {}
+        },
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+              options: {
+                trackingIds: ["G-BTDS6S0YG7"],
+                gtagConfig: {
+                  anonymize_ip: true,
+                  cookie_expires: 0,
+                },
+                pluginConfig: {
+                  head: true,
+                },
+              },
         },
     ]
 };
