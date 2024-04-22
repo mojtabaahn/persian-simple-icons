@@ -50,6 +50,10 @@ const Layout = ({children}) => <div>
 const Navigation = ({title, description}) => {
 
     const [searchFilter, setSearchFilter] = useAtom(searchFilterAtom)
+    const clearSearchFilter = e => {
+        setSearchFilter('')
+        document.querySelector('#search').focus()
+    }
 
     return <div className='flex flex-col gap-2 md:flex-row items-center py-4 mb-6'>
         <Logo className='h-12' />
@@ -59,8 +63,12 @@ const Navigation = ({title, description}) => {
         </div>
         <div className='flex-grow' />
         <div className='rounded-xl bg-white dark:bg-gray-900 py-2 px-4 flex items-center max-w-[100%] w-[250px]'>
-            <input type="text" className='bg-transparent outline-none flex-grow min-w-[0]' placeholder='Filter Icons..' value={searchFilter} onChange={e => setSearchFilter(e.target.value)} />
-            <i className='bx bx-search text-xl'></i>
+            <input id='search' type="text" className='bg-transparent outline-none flex-grow min-w-[0]' placeholder='Filter Icons..' value={searchFilter} onChange={e => setSearchFilter(e.target.value)} />
+            {
+                searchFilter == '' ?
+                <i className='bx bx-search text-xl'></i> :
+                <button onClick={clearSearchFilter}><i className='bx bx-x text-xl'></i></button>
+             }
         </div>
         <a className='ml-2' href='https://github.com/mojtabaahn/persian-simple-icons'>
             <i className='bx bxl-github text-4xl'></i>
