@@ -1,18 +1,10 @@
 module.exports = {
     siteMetadata: {
         title: 'Persian Simple Icons',
-        description: '20+ free SVG icons for persian popular brands',
+        description: '40+ free SVG icons for persian popular brands',
         siteUrl: `http://localhost:8000`
     },
     plugins: [
-        {
-          resolve: `gatsby-plugin-google-analytics`,
-          options: {
-            trackingId: "G-BTDS6S0YG7",
-            head: true,
-            anonymize: true,
-          },
-        },
         'gatsby-plugin-postcss',
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
